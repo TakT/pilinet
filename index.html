@@ -1,91 +1,1232 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Главная</title>
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Pilinet by TakT</title>
-  </head>
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
-  <body>
-    <a id="forkme_banner" href="https://github.com/TakT/pilinet">View on GitHub</a>
-    <div class="shell">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Pilinet</h1>
-            <h2></h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/TakT/pilinet/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/TakT/pilinet/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
+		<link rel="stylesheet" href="./assets/css/styles.css">
 
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 
-      <span class="banner-fix"></span>
+	</head>
+	<body class="main__page">
 
+		<header id="header">
 
-      <section id="main_content">
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+			<div class="header__topline">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-3 topline_citychange">
+							<ul class="list-inline">
+								<li>Ваш город:</li>
+								<li class="citychange__wrapper">
+									<a href="javascript:void(0);" title="Москва">Москва</a>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+									<div class="citychange__cities">
+										<ul>
+											<li>
+												<a href="javascript:void(0);" title="Москва">Москва</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);" title="Волгоград">Волгоград</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);" title="Екатеринбург">Екатеринбург</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);" title="Казань">Казань</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);" title="Калуга">Калуга</a>
+											</li>
+										</ul>
+										<ul>
+											<li>
+												<a href="javascript:void(0);" title="Красноярск">Красноярск</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);" title="Нижний Новгород">Нижний Новгород</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);" title="Новосибирск">Новосибирск</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);" title="Пермь">Пермь</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);" title="Ростов-на-Дону">Ростов-на-Дону</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="col-xs-9 topline__navigation">
+							<ul class="list-inline">
+								<li>
+									<a href="javascript:void(0);" title="О компании">О компании</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" title="Доставка">Доставка</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" title="Возврат">Возврат</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" title="Опт">Опт</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" title="Контакты">Контакты</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" title="Отзывы">Отзывы</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" title="Как заказать">Как заказать</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" title="Вопрос-ответ">Вопрос-ответ</a>
+								</li>
+								<li class="navigation__login">
+									<a href="#auth" data-toggle="modal" data-target="#auth" title="Войти"><i class="i i-user"></i> Войти</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+			<div class="header__main">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-3 logo">
+							<a href="javascript:void(0);" title="">
+								<img src="./assets/images/logo.png" alt="">
+							</a>
+						</div>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+						<div class="col-xs-5 header__info">
+							<div class="pull-right">
+								<div class="info__schedule">Работаем с 9:00 до 20:00 по Мск</div>
+								<div class="row info__phones">
+									<div class="col-xs-6">(495) 74-888-19</div>
+									<div class="col-xs-6">(800) 500-26-18</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6">
+										<a href="#question" data-target="#question" data-toggle="modal" title="Заказать звонок" class="btn btn-red"><span>Заказать звонок</span></a>
+									</div>
+									<div class="col-xs-6 info__email-warpper">
+										<a href="mailto:trans-planeta@yandex.ru" title="trans-planeta@yandex.ru" class="info__email"><i class="i i-mail"></i><span>trans-planeta@yandex.ru</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3 col-xs-offset-1 header__cart-service-wrapper">
+							<div class="header__service pull-left">
+								<div class="service__title">Сервис:</div>
+								<div class="service__phones">
+									<div class="phone">8(495) 748-88-19</div>
+									<div class="phone">8(965) 237-67-09</div>
+								</div>
+							</div>
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
+							<div class="header__cart pull-right">
+								<div class="cart__prize active"><i class="i i-prize"></i> <a href="javascript:void(0);" title="Перейти в корзину">У Вас подарок!</a></div>
+								<div class="cart__info">
+									<div class="info_count">
+										<a href="javascript:void(0);" title="Перейти в корзину">1</a>
+									</div>
+									<div class="info_bg">
+										<a href="javascript:void(0);" title="Перейти в корзину">
+											<img src="./assets/images/cart.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+		<div id="navigation">
+			<div class="container">
+				<ul class="list-table">
+					<li>
+						<a href="javascript:void(0);" title="Роботы для уборки">Роботы для уборки</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" title="Пылесосы и пароочистители">Пылесосы и пароочистители</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" title="Мойки и полив">Мойки и полив</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" title="Очистка воздуха">Очистка воздуха</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" title="Все для сада">Все для сада</a>
+						<div class="sub-menu">
+							<div class="menu__item">
+								<div class="menu__item-img">
+									<img src="./assets/images/menus/1.jpg" alt="Газонокосилки">
+								</div>
+								<div class="menu__item-content">
+									<div class="menu__item-title">Газонокосилки</div>
+									<ul class="menu__item-links">
+										<li>
+											<a href="javascript:void(0);" title="С сиденьем">С сиденьем</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" title="Аккумуляторные">Аккумуляторные</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" title="Электрические">Электрические</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" title="Бензиновые">Бензиновые</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" title="Механические">Механические</a>
+										</li>
+									</ul>
+								</div>
+							</div>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+							<div class="menu__item">
+								<div class="menu__item-img">
+									<img src="./assets/images/menus/2.jpg" alt="Бензо и электрокосы, триммеры">
+								</div>
+								<div class="menu__item-content">
+									<div class="menu__item-title">Бензо и электрокосы, триммеры</div>
+									<ul class="menu__item-links">
+										<li>
+											<a href="javascript:void(0);" title="Бензокосы">Бензокосы</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" title="Электротриммеры">Электротриммеры</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" title="Аккумуляторные триммеры">Аккумуляторные триммеры</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" title="Системы multimate">Системы multimate</a>
+										</li>
+									</ul>
+								</div>
+							</div>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+							<div class="menu__item">
+								<div class="menu__item-img">
+									<img src="./assets/images/menus/3.jpg" alt="Роботы-газонокосильщики">
+								</div>
+								<div class="menu__item-content">
+									<div class="menu__item-title">Роботы-газонокосильщики</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0);" title="Все для глажки">Все для глажки</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" title="Все для бассейнов">Все для бассейнов</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" title="Проф. техника">Проф. техника</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" title="Чистящие средства">Чистящие средства</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" title="Прочее">Прочее</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+		<section id="content">
+			<div class="container">
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-      </section>
+				<div class="row content-block">
+					<div class="col-xs-9">
+						<div class="js-home-slider">
+							<div class="item">
+								<a href="javascript:void(0);" title="">
+									<img src="./assets/images/slider/1.png" alt="">
+								</a>
+							</div>
 
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/TakT">TakT</a> can be found on <a href="https://github.com/TakT/pilinet">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
+							<div class="item">
+								<a href="javascript:void(0);" title="">
+									<img src="./assets/images/slider/1.png" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-3">
+						<div class="search">
+							<form action="javascript:void(0);" method="POST">
+								<input type="text" placeholder="Введите название ...">
+								<button type="submit"><i class="i i-search"></i></button>
+							</form>
+						</div>
 
-    </div>
+						<div class="subscribe">
+							<div class="subscribe__title">Подпишись на рассылку и плати меньше!</div>
+							<form action="javascript:void(0);" method="POST">
+								
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Введите название ...">
+								</div>
+								
+								<div class="text-right">
+									<button type="submit" class="btn btn-red-s">Подписаться</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
 
-    
-  </body>
+				<div class="row">
+					<div class="col-xs-9 container__main">
+						<div class="main-tabs js-main-tabs">
+
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist">
+								<li class="active">
+									<a href="#specials" aria-controls="specials" role="tab" data-toggle="tab" title="Спецпредложения"><span>Спецпредложения</span></a>
+								</li>
+								<li>
+									<a href="#new" aria-controls="new" role="tab" data-toggle="tab" title="Новинки"><span>Новинки</span></a>
+								</li>
+								<li>
+									<a href="#hits" aria-controls="hits" role="tab" data-toggle="tab" title="Хиты продаж"><span>Хиты продаж</span></a>
+								</li>
+								<li>
+									<a href="#brands" aria-controls="brands" role="tab" data-toggle="tab" title="Производители"><span>Производители</span></a>
+								</li>
+							</ul>
+
+							<!-- Tab panes -->
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane active" id="specials">
+									<div class="catalog__items">
+										<div class="catalog__item">
+											<div class="item__img">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">
+													<img src="./assets/images/products/1.jpg" alt="Робот-пылесос Neato BotVac 85">
+												</a>
+											</div>
+
+											<div class="item__title">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">Робот-пылесос Neato BotVac 85</a>
+											</div>
+
+											<div class="item__raiting">
+												<ul class="list-inline">
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+												</ul>
+											</div>
+
+											<div class="item__bottom clearfix">
+												<div class="item__price">32 700 руб.</div>
+												<div class="item__submit">
+													<a href="javascript:void(0);" title="Купить" class="btn btn-red-s">Купить</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="catalog__item">
+											<div class="item__img">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">
+													<img src="./assets/images/products/1.jpg" alt="Робот-пылесос Neato BotVac 85">
+												</a>
+											</div>
+
+											<div class="item__title">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">Робот-пылесос Neato BotVac 85</a>
+											</div>
+
+											<div class="item__raiting">
+												<ul class="list-inline">
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+												</ul>
+											</div>
+
+											<div class="item__bottom clearfix">
+												<div class="item__price">32 700 руб.</div>
+												<div class="item__submit">
+													<a href="javascript:void(0);" title="Купить" class="btn btn-red-s">Купить</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="catalog__item">
+											<div class="item__img">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">
+													<img src="./assets/images/products/1.jpg" alt="Робот-пылесос Neato BotVac 85">
+												</a>
+											</div>
+
+											<div class="item__title">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">Робот-пылесос Neato BotVac 85</a>
+											</div>
+
+											<div class="item__raiting">
+												<ul class="list-inline">
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+												</ul>
+											</div>
+
+											<div class="item__bottom clearfix">
+												<div class="item__price">32 700 руб.</div>
+												<div class="item__submit">
+													<a href="javascript:void(0);" title="Купить" class="btn btn-red-s">Купить</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="catalog__item">
+											<div class="item__img">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">
+													<img src="./assets/images/products/1.jpg" alt="Робот-пылесос Neato BotVac 85">
+												</a>
+											</div>
+
+											<div class="item__title">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">Робот-пылесос Neato BotVac 85</a>
+											</div>
+
+											<div class="item__raiting">
+												<ul class="list-inline">
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+												</ul>
+											</div>
+
+											<div class="item__bottom clearfix">
+												<div class="item__price">32 700 руб.</div>
+												<div class="item__submit">
+													<a href="javascript:void(0);" title="Купить" class="btn btn-red-s">Купить</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="catalog__item">
+											<div class="item__img">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">
+													<img src="./assets/images/products/1.jpg" alt="Робот-пылесос Neato BotVac 85">
+												</a>
+											</div>
+
+											<div class="item__title">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">Робот-пылесос Neato BotVac 85</a>
+											</div>
+
+											<div class="item__raiting">
+												<ul class="list-inline">
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+												</ul>
+											</div>
+
+											<div class="item__bottom clearfix">
+												<div class="item__price">32 700 руб.</div>
+												<div class="item__submit">
+													<a href="javascript:void(0);" title="Купить" class="btn btn-red-s">Купить</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="new">
+									<div class="catalog__items">
+										<div class="catalog__item">
+											<div class="item__img">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">
+													<img src="./assets/images/products/1.jpg" alt="Робот-пылесос Neato BotVac 85">
+												</a>
+											</div>
+
+											<div class="item__title">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">Робот-пылесос Neato BotVac 85</a>
+											</div>
+
+											<div class="item__raiting">
+												<ul class="list-inline">
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+												</ul>
+											</div>
+
+											<div class="item__bottom clearfix">
+												<div class="item__price">32 700 руб.</div>
+												<div class="item__submit">
+													<a href="javascript:void(0);" title="Купить" class="btn btn-red-s">Купить</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="catalog__item">
+											<div class="item__img">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">
+													<img src="./assets/images/products/1.jpg" alt="Робот-пылесос Neato BotVac 85">
+												</a>
+											</div>
+
+											<div class="item__title">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">Робот-пылесос Neato BotVac 85</a>
+											</div>
+
+											<div class="item__raiting">
+												<ul class="list-inline">
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+												</ul>
+											</div>
+
+											<div class="item__bottom clearfix">
+												<div class="item__price">32 700 руб.</div>
+												<div class="item__submit">
+													<a href="javascript:void(0);" title="Купить" class="btn btn-red-s">Купить</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="catalog__item">
+											<div class="item__img">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">
+													<img src="./assets/images/products/1.jpg" alt="Робот-пылесос Neato BotVac 85">
+												</a>
+											</div>
+
+											<div class="item__title">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">Робот-пылесос Neato BotVac 85</a>
+											</div>
+
+											<div class="item__raiting">
+												<ul class="list-inline">
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+												</ul>
+											</div>
+
+											<div class="item__bottom clearfix">
+												<div class="item__price">32 700 руб.</div>
+												<div class="item__submit">
+													<a href="javascript:void(0);" title="Купить" class="btn btn-red-s">Купить</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="catalog__item">
+											<div class="item__img">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">
+													<img src="./assets/images/products/1.jpg" alt="Робот-пылесос Neato BotVac 85">
+												</a>
+											</div>
+
+											<div class="item__title">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">Робот-пылесос Neato BotVac 85</a>
+											</div>
+
+											<div class="item__raiting">
+												<ul class="list-inline">
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+												</ul>
+											</div>
+
+											<div class="item__bottom clearfix">
+												<div class="item__price">32 700 руб.</div>
+												<div class="item__submit">
+													<a href="javascript:void(0);" title="Купить" class="btn btn-red-s">Купить</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="catalog__item">
+											<div class="item__img">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">
+													<img src="./assets/images/products/1.jpg" alt="Робот-пылесос Neato BotVac 85">
+												</a>
+											</div>
+
+											<div class="item__title">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">Робот-пылесос Neato BotVac 85</a>
+											</div>
+
+											<div class="item__raiting">
+												<ul class="list-inline">
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+												</ul>
+											</div>
+
+											<div class="item__bottom clearfix">
+												<div class="item__price">32 700 руб.</div>
+												<div class="item__submit">
+													<a href="javascript:void(0);" title="Купить" class="btn btn-red-s">Купить</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="hits">
+									<div class="catalog__items">
+										<div class="catalog__item">
+											<div class="item__img">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">
+													<img src="./assets/images/products/1.jpg" alt="Робот-пылесос Neato BotVac 85">
+												</a>
+											</div>
+
+											<div class="item__title">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">Робот-пылесос Neato BotVac 85</a>
+											</div>
+
+											<div class="item__raiting">
+												<ul class="list-inline">
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+												</ul>
+											</div>
+
+											<div class="item__bottom clearfix">
+												<div class="item__price">32 700 руб.</div>
+												<div class="item__submit">
+													<a href="javascript:void(0);" title="Купить" class="btn btn-red-s">Купить</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="catalog__item">
+											<div class="item__img">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">
+													<img src="./assets/images/products/1.jpg" alt="Робот-пылесос Neato BotVac 85">
+												</a>
+											</div>
+
+											<div class="item__title">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">Робот-пылесос Neato BotVac 85</a>
+											</div>
+
+											<div class="item__raiting">
+												<ul class="list-inline">
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+												</ul>
+											</div>
+
+											<div class="item__bottom clearfix">
+												<div class="item__price">32 700 руб.</div>
+												<div class="item__submit">
+													<a href="javascript:void(0);" title="Купить" class="btn btn-red-s">Купить</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="catalog__item">
+											<div class="item__img">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">
+													<img src="./assets/images/products/1.jpg" alt="Робот-пылесос Neato BotVac 85">
+												</a>
+											</div>
+
+											<div class="item__title">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">Робот-пылесос Neato BotVac 85</a>
+											</div>
+
+											<div class="item__raiting">
+												<ul class="list-inline">
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+												</ul>
+											</div>
+
+											<div class="item__bottom clearfix">
+												<div class="item__price">32 700 руб.</div>
+												<div class="item__submit">
+													<a href="javascript:void(0);" title="Купить" class="btn btn-red-s">Купить</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="catalog__item">
+											<div class="item__img">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">
+													<img src="./assets/images/products/1.jpg" alt="Робот-пылесос Neato BotVac 85">
+												</a>
+											</div>
+
+											<div class="item__title">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">Робот-пылесос Neato BotVac 85</a>
+											</div>
+
+											<div class="item__raiting">
+												<ul class="list-inline">
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+												</ul>
+											</div>
+
+											<div class="item__bottom clearfix">
+												<div class="item__price">32 700 руб.</div>
+												<div class="item__submit">
+													<a href="javascript:void(0);" title="Купить" class="btn btn-red-s">Купить</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="catalog__item">
+											<div class="item__img">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">
+													<img src="./assets/images/products/1.jpg" alt="Робот-пылесос Neato BotVac 85">
+												</a>
+											</div>
+
+											<div class="item__title">
+												<a href="javascript:void(0);" title="Робот-пылесос Neato BotVac 85">Робот-пылесос Neato BotVac 85</a>
+											</div>
+
+											<div class="item__raiting">
+												<ul class="list-inline">
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-on"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+													<li>
+														<a href="javascript:void(0);"><i class="i i-star-off"></i></a>
+													</li>
+												</ul>
+											</div>
+
+											<div class="item__bottom clearfix">
+												<div class="item__price">32 700 руб.</div>
+												<div class="item__submit">
+													<a href="javascript:void(0);" title="Купить" class="btn btn-red-s">Купить</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="brands">
+									
+								</div>
+							</div>
+						</div>
+
+						<article class="content__item">
+							<div class="item__title">О магазине (почему Вам лучше приобретать здесь...)</div>
+							<div class="item__text">
+								<p>Мы - Компания "ПЫЛИ НЕТ",  стали официальным представителем "Shenzhen Silver Star Intelligent Electronics Co., Ltd" (Китай), "Lilin International Group Limited" (Китай) в России и Прибалтике, и предлагаем Вам товар заводского производства, а не "no name".</p>
+								<p>Наши сотрудники сами используют и тестируют различные модели роботов-пылесосов, и смогут ответить Вам на все Ваши вопросы по продукции.</p>
+								<p>Мы оcуществляем оптовую поставку роботов-пылесосов, а также розничную торговлю через интернет-магазин и можем сделать для Вас лучшие цены. Мы имеем свой сервисный центр для обслуживания наших оптовых и розничных покупателей; и если возникнет необходимость, то способны решить все Ваши проблемы с роботами.</p>
+								<p>Наша фирма предоставляет все модели роботов-пылесосов  для сертификации в Росстат РФ, и Вы получает качественную технику, которая имеет все разрешения и сертификаты для продажи на территории Российской Федерации.</p>
+								<p>Единственно, мы не проводим дорогих рекламных компаний; не выдаем одну технику за другую, более дорогую; не платим подкрутчикам и копирайтерам. Мы работаем, чтобы наши покупатели - Вы - могли получить максимум за свои деньги.</p>
+							</div>
+						</article>
+					</div>
+
+					<aside class="col-xs-3 container__sidebar container__sidebar-right">
+
+						<div class="sidebar__item">
+							<div class="sidebar__item-banner">
+								<a href="javascript:void(0);" target="_blank">
+									<img src="./assets/images/ya-market.jpg" alt="" class="img-responsive">
+								</a>
+							</div>
+						</div>
+
+												<div class="sidebar__item">
+							<div class="item__title">Полезные статьи</div>
+							<div class="item__content">
+								<div class="news">
+									<div class="news__item">
+										<div class="news__title">
+											<a href="javascript:void(0);" title="Убрать пятна с линолеума">Убрать пятна с линолеума</a>
+										</div>
+										<div class="news__date">19 Октября 2015</div>
+										<div class="news__text">Для мытья линолеума лучше всего применять раствор хозяйственного мыла (4-5 столовых ложки</div>
+									</div>
+
+									<div class="news__item">
+										<div class="news__title">
+											<a href="javascript:void(0);" title="Убрать пятна с линолеума">Убрать пятна с линолеума</a>
+										</div>
+										<div class="news__date">19 Октября 2015</div>
+										<div class="news__text">Для мытья линолеума лучше всего применять раствор хозяйственного мыла (4-5 столовых ложки</div>
+									</div>
+								</div>
+
+								<div class="item__content-readmore">
+									<a href="javascript:void(0);" title="Читать все статьи">Читать все статьи</a>
+								</div>
+							</div>
+						</div>
+						
+												<div class="sidebar__item">
+							<div class="item__title">Новости</div>
+							<div class="item__content">
+								<div class="news">
+									<div class="news__item">
+										<div class="news__date">19 Октября 2015</div>
+										<div class="news__title">
+											<a href="javascript:void(0);" title="Для мытья линолеума лучше всего применять раствор">Для мытья линолеума лучше всего применять раствор</a>
+										</div>
+									</div>
+
+									<div class="news__item">
+										<div class="news__date">19 Октября 2015</div>
+										<div class="news__title">
+											<a href="javascript:void(0);" title="ткрывать вопрос на отдельной странице, Количество символов">ткрывать вопрос на отдельной странице, Количество символов</a>
+										</div>
+									</div>
+
+									<div class="news__item">
+										<div class="news__date">19 Октября 2015</div>
+										<div class="news__title">
+											<a href="javascript:void(0);" title="Предмодерация в модулях разделена на группы">Предмодерация в модулях разделена на группы</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="item__content-readmore">
+									<a href="javascript:void(0);" title="Читать все новости">Читать все новости</a>
+								</div>
+							</div>
+						</div>
+
+					</aside>
+				</div>
+			</div>
+		</section>
+
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-4">
+						<div class="copyright">Copyright &copy; Пылинет, 2015<br>все цены указаны в рублях</div>
+						
+						<div class="phones">
+							<div class="phone">(495) 74-888-19</div>
+							<div class="phone">(800) 500-26-18</div>
+						</div>
+
+						<div class="info__schedule">с 9:00 до 20:00 по Мск</div>
+
+						<div class="callback">
+							<a href="javascript:void(0);" title="Заказать обратный звонок">Заказать обратный звонок</a>
+						</div>
+
+						<ul class="list-inline social">
+							<li class="social__title">Мы в соц. сетях</li>
+							<li>
+								<a href="javascript:void(0);" target="_blank" title="Вконтакте">
+									<i class="i i-vk"></i>
+									<i class="i i-hover i-vk-hover"></i>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" target="_blank" title="Facebook">
+									<i class="i i-fb"></i>
+									<i class="i i-hover i-fb-hover"></i>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" target="_blank" title="Twitter">
+									<i class="i i-tw"></i>
+									<i class="i i-hover i-tw-hover"></i>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" target="_blank" title="YouTube">
+									<i class="i i-yb"></i>
+									<i class="i i-hover i-yb-hover"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-xs-2 footer__nav">
+						<div class="nav__title">Компания</div>
+						<ul class="nav__items">
+							<li>
+								<a href="javascript:void(0);" title="О компании">О компании</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" title="Новости">Новости</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" title="Регистрация">Регистрация</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" title="Контакты">Контакты</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" title="Обратная связь">Обратная связь</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-xs-6 footer__nav">
+						<div class="nav__title">Информация для покупателей</div>
+						<div class="row">
+							<div class="col-xs-5">
+								<ul class="nav__items">
+									<li>
+										<a href="javascript:void(0);" title="Доставка">Доставка</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" title="Оплата">Оплата</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" title="Гарантия">Гарантия</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" title="Обмен и возрат">Обмен и возрат</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" title="Сервисный центр">Сервисный центр</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-xs-6 footer__nav-col-2">
+								<ul class="nav__items">
+									<li>
+										<a href="javascript:void(0);" title="Как сделать заказ">Как сделать заказ</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" title="Покупка в кредит">Покупка в кредит</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" title="Установка и настройка техники">Установка и настройка техники</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" title="Страхование техники">Страхование техники</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-9">
+						<ul class="list-inline payme">
+							<li class="social__title">Мы принимаем</li>
+							<li>
+								<a href="javascript:void(0);" target="_blank" title="Мы принимаем">
+									<img src="./assets/images/icons/payme.jpg" alt="Мы принимаем">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-3">
+						<ul class="list-inline">
+							<li>
+								<a href="javascript:void(0);" title="">
+									<img src="./assets/images/icons/statistic.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" title="">
+									<img src="./assets/images/icons/statistic.jpg" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Modal -->
+		<div class="modal fade" id="question" tabindex="-1" role="dialog" aria-labelledby="questionLabel">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="i i-close"></i></button>
+						<h4 class="modal-title" id="questionLabel">Заказать звонок</h4>
+					</div>
+					<div class="modal-body">
+						<form action="" method="POST" role="form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Ваше имя..." required>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Ваше телефон..." required>
+							</div>
+						
+							<div class="text-right">
+								<button type="submit" class="btn btn-red-s">Заказать звонок</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="auth" tabindex="-1" role="dialog" aria-labelledby="authLabel">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="i i-close"></i></button>
+						<h4 class="modal-title" id="authLabel">Авторизация</h4>
+					</div>
+					<div class="modal-body">
+						<form action="" method="POST" role="form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Ваше логин..." required>
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Ваше пароль..." required>
+							</div>
+						
+							<div class="text-right">
+								<button type="submit" class="btn btn-red-s">Войти</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+
+		<script type="text/javascript" src="./assets/js/bootstrap.modal.min.js"></script>
+		<script type="text/javascript" src="./assets/js/bootstrap.tabs.min.js"></script>
+		<script type="text/javascript" src="./assets/js/template.js"></script>
+
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				var sliderHomdeTabs = jQuery(".js-main-tabs .tab-content .catalog__items");
+				sliderHomdeTabs.slick({
+					arrows: true,
+					dots: false,
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					prevArrow: '<a href="javascript:void(0);" title="Назад" class="slick-prev slick-arrow"><i class="i i-arrow-l"></i></a>',
+					nextArrow: '<a href="javascript:void(0);" title="Вперед" class="slick-next slick-arrow"><i class="i i-arrow-r"></i></a>',
+				});
+
+				jQuery('.js-main-tabs').on('shown.bs.tab', function (e) {
+					sliderHomdeTabs.slick('setPosition');
+				});
+
+				jQuery('.js-home-slider').slick({
+					arrows: false,
+					dots: true,
+					autoplay: true,
+				});
+			});
+		</script>
+	</body>
 </html>
